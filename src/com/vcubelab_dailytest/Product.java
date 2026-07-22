@@ -17,7 +17,7 @@ public class Product {
 	
 	
 	 Product(){
-		System.out.println("No Argument Constructir is Called");
+		System.out.println("No Argument Constructor is Called");
 		pid=101;
 		pname="Sura";
 		price=50000;
