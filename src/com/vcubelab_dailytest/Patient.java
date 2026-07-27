@@ -32,7 +32,6 @@ public class Patient {
 	int Number_of_Days_Admitted;
 	
 	Patient(String Name,int Age,double Room_Charge_Per_Day,int Number_of_Days_Admitted){
-		System.out.println("Parameterized Constructor is Called");
 		this.Name=Name;
 		this.Age=Age;
 		this.Room_Charge_Per_Day=Room_Charge_Per_Day;
@@ -50,12 +49,13 @@ public class Patient {
 		System.out.println("Age                   :"+Age);
 		System.out.println("Room Charge Per Day   :"+Room_Charge_Per_Day);
 		System.out.println("Days Admitted         :"+Number_of_Days_Admitted);
-		
+	    System.out.println("Total Hospital Bill  : " +calculate());
+		System.out.println("---------------------------------");
+
 	}
 
 	
 	public static void main(String[] args) {
-		System.out.println("Main Method Started");
 		Scanner sc=new Scanner(System.in);
 		
 		System.out.println("Enter Patient Name:");
@@ -71,8 +71,7 @@ public class Patient {
 		
 		Patient t=new Patient(Name,Age,Room_Charge_Per_Day,Number_of_Days_Admitted);
 		t.display();
-		System.out.println("Total Hospital Bill   :"+ t.calculate());
-		System.out.println("Main Method ended");
+		
 		
 
 	}
