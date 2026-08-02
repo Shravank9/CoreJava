@@ -25,7 +25,7 @@ public class Person {
 	}
 	
 	Person(String name,String type,int age){
-		System.out.println("Three r constructor is called");
+		System.out.println("Three r constructor is called from parent");
 		this.name=name;
 		this.type=type;
 		this.age=age;
