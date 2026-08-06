@@ -9,6 +9,12 @@ public class Neon_Number {
 		System.out.println("Enter the number");
 		int a=sc.nextInt();
 		int b=number_check(a);
+		 if (b==a) {
+        	 System.out.printf(" %d is a Neon Number",a);
+         }else {
+        	 System.out.printf(" %d is Not a Neon Number",a);
+         
+         }
 		sc.close();
 		
 	}
@@ -20,14 +26,9 @@ public class Neon_Number {
          for(;c>0;c=c/10) {
            digit  =c%10;
            sum+=digit;
-        	 
          }
-         if (sum==a) {
-        	 System.out.printf("%d  is a Neon Number",a);
-         }else {
-        	 System.out.printf(" %d is   Not a Neon Number",a);
-         }
-		return 0;
+        
+		return sum;
 	}
 
 }
