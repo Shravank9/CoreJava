@@ -10,12 +10,14 @@ public class Test2 {
            Test2 t=new Test2();
            t.Hello();
 	}
-	// see it will not excute until the method is called and more thing was it loads to memory when the it excutes 
+	// see it will not excute until the method is called and more 
+//	thing was it loads to memory when the it excutes 
 	public static void Welcome() {
 		System.out.println("static method");
 	}
 	
-	// see it will not excute until the method is called and more thing  it doesnt loads to memory until the obkect cretaion sis not yet done 
+	// see it will not excute until the method is called and more thing  was the,
+//	it doesnt loads to memory until the object cretaion is not yet done!
 	void Hello() {
 		System.out.println("hi guys, welcome to my world!");
 	}

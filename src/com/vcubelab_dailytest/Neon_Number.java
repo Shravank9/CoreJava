@@ -12,7 +12,7 @@ public class Neon_Number {
 		 if (b==a) {
         	 System.out.printf(" %d is a Neon Number",a);
          }else {
-        	 System.out.printf(" %d is Not a Neon Number",a);
+        	 System.out.printf(" %d is Not a Neon Number",a); 
          
          }
 		sc.close();
