@@ -18,13 +18,13 @@ public class ArrayAverage {
 		}
 
 		int arr_sum = 0;
-		int avg = 0;
+		double avg = 0;
 
 		for (int i = 0; i < arr.length; i++) {
 			arr_sum += arr[i];
 
 		}
-		avg = arr_sum / arr.length;
+		avg = (double) arr_sum / arr.length;
 		System.out.println("Average: " + avg);
 
 		sc.close();
