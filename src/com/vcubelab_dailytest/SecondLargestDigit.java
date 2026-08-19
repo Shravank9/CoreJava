@@ -7,31 +7,30 @@ public class SecondLargestDigit {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the Number:");
-		int a=sc.nextInt();
+		int a = sc.nextInt();
 		secondlargest_gigit(a);
 		sc.close();
 
 	}
 
 	private static void secondlargest_gigit(int a) {
-		
-		int sec_largest=0;
-		int first_largest=0;
-		
-		while(a>0) {
-			int r=a%10;
-			if(first_largest<r) {
-				sec_largest=first_largest;
-				first_largest=r;
-				
-			}else if( sec_largest<r && r < first_largest){
-				sec_largest=r;
-			}
-			a/=10;
-		}
-		System.out.println("Second Largest Number is: "+sec_largest);
 
-		
+		int sec_largest = 0;
+		int first_largest = 0;
+
+		while (a > 0) {
+			int r = a % 10;
+			if (first_largest < r) {
+				sec_largest = first_largest;
+				first_largest = r;
+
+			} else if (sec_largest < r && r < first_largest) {
+				sec_largest = r;
+			}
+			a /= 10;
+		}
+		System.out.println("Second Largest Number is: " + sec_largest);
+
 	}
 
 }
