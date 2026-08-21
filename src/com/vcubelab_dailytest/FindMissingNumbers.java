@@ -32,7 +32,7 @@ public class FindMissingNumbers {
 			}
 		}
 
-		for (int i = 0; i <=lar; i++) {
+		for (int i = 1; i <=lar; i++) {
 			boolean check = false;
 			for (int j = 0; j < arr.length; j++) {
 				if (arr[j] == i) {
