@@ -30,7 +30,7 @@ public class ArrayElementSeparator {
 		int[] pos_arr = new int[p_count];
 		int[] neg_arr = new int[n_count];
 		int[] zero_arr = new int[z_count];
-		
+
 		int p = 0;
 		int n = 0;
 		int z = 0;
