@@ -58,6 +58,7 @@ public class Bike extends Vehicle {
 		Bike t=new Bike("KIA","Sonnet",150000);
 		t.vehcileinfo();
 		
+		
 		System.out.println("Main method ended");
 
 	}
