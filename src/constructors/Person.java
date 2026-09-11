@@ -51,7 +51,10 @@ public class Person {
 	
 
 }
+
+
 class customer extends Person{
+	
 	String name="karthik";
 	String type="Male";
 	int age=23;

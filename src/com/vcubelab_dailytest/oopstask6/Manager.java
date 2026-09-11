@@ -1,6 +1,6 @@
 package com.vcubelab_dailytest.oopstask6;
 
-public class Manager implements Attendance {
+public class Manager implements Attendance{
 
 	@Override
 	public void markAttendance() {

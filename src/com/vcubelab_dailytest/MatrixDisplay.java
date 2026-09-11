@@ -25,12 +25,12 @@ public class MatrixDisplay {
 
 			}
 		}
-		
+
 		System.out.println(Arrays.deepToString(arr));
 
 		for (int x[] : arr) {
 			for (int n : x) {
-				System.out.print(n);
+				System.out.print(n + " ");
 			}
 			System.out.println();
 		}

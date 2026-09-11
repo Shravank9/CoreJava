@@ -2,7 +2,7 @@ package com.vcubelab_dailytest.oopstask6;
 
 import java.util.Scanner;
 
-public class AttendanceDemo {
+public class AttendanceDemo{
 
 	public static void main(String[] args) {
 

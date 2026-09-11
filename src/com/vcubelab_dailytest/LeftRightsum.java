@@ -14,6 +14,11 @@ public class LeftRightsum {
 		System.out.println("Enter the size of Column size");
 		int col = sc.nextInt();
 
+		if (row != col) {
+			System.out.println("Matrix must be square to calculate diagonal sums.");
+			sc.close();
+			return;
+		}
 		System.out.printf("Enter the elements of matrix which %d x %d ", row, col);
 
 		int[][] arr = new int[row][col];
@@ -27,7 +32,7 @@ public class LeftRightsum {
 		}
 
 		int sum = 0;
-		int sum1=0;
+		int sum1 = 0;
 
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
@@ -40,9 +45,8 @@ public class LeftRightsum {
 				}
 			}
 		}
-		System.out.println("Left Diagonal sum:"+sum);
-		System.out.println("Right Diagonal sum:"+sum1);
-
+		System.out.println("Left Diagonal sum:" + sum);
+		System.out.println("Right Diagonal sum:" + sum1);
 
 	}
 
