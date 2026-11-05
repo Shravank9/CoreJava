@@ -18,7 +18,7 @@ public class Car extends Vehicle {
 	@Override
 	public void displayDetails() {
 		super.displayDetails();
-		
+
 		System.out.println("Fuel Type: " + fuelType);
 		System.out.println("Number of Seats: " + numberOfSeats);
 	}

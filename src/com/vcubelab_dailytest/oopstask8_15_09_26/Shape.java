@@ -3,7 +3,8 @@ package com.vcubelab_dailytest.oopstask8_15_09_26;
 import java.util.Scanner;
 
 public abstract class Shape {
-	Scanner sc=new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
+
 	abstract void area();
 
 }

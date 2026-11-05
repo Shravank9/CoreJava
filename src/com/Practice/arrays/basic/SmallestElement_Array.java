@@ -9,13 +9,13 @@ public class SmallestElement_Array {
 		System.out.println("Enter the Size of the Array:");
 
 		int size = sc.nextInt();
-		
+
 		if (size <= 0) {
-		    System.out.println("Array size must be greater than 0.");
-		    sc.close();
-		    return;
+			System.out.println("Array size must be greater than 0.");
+			sc.close();
+			return;
 		}
-		
+
 		int[] arr = new int[size];
 
 		System.out.printf("Enter %d array elements:%n", size);
@@ -27,7 +27,7 @@ public class SmallestElement_Array {
 		int small_element = arr[0];
 
 		for (int n : arr) {
-			
+
 			if (small_element > n) {
 				small_element = n;
 			}

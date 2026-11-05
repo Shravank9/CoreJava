@@ -5,25 +5,22 @@ import java.util.Scanner;
 public class Reverse_Alphabets {
 
 	public static void main(String[] args) {
-		
-		for (int i=26;i>=1;i--) {
-			
-			System.out.print((char)(i + 64) + " ");
-		
+
+		for (int i = 26; i >= 1; i--) {
+
+			System.out.print((char) (i + 64) + " ");
+
 		}
 		System.out.println();
-		
+
 		for (int i = 90; i >= 65; i--) {
-            System.out.print((char)i + " ");
-		
-		
+			System.out.print((char) i + " ");
+
 		}
-		
 
 	}
 
 }
-
 
 //2.Print Alphabets in Reverse Order
 //Question:

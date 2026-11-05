@@ -10,10 +10,10 @@ public class MagazineBookCasting {
 			Object obj = new Magazine();
 
 			Book b = (Book) obj;
-			
-			Object obj1=new Book();
-			Magazine m=(Magazine) obj1;
-			
+
+			Object obj1 = new Book();
+			Magazine m = (Magazine) obj1;
+
 		} catch (ClassCastException e) {
 
 			System.out.println(e.getCause());

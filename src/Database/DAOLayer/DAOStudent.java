@@ -13,7 +13,7 @@ public class DAOStudent {
 
 		try {
 
-			con=DBconnection.getConnection();
+			con = DBconnection.getConnection();
 			PreparedStatement ps = con
 					.prepareStatement("INSERT INTO student (id, name, age, marks) VALUES (?, ?, ?, ?)");
 
@@ -39,7 +39,7 @@ public class DAOStudent {
 			ps.addBatch();
 
 			int n[] = ps.executeBatch();
-			
+
 			System.out.println(n.length + " student records inserted successfully.");
 		} catch (Exception e) {
 			System.out.println(e);

@@ -50,8 +50,6 @@ public class Main {
 
 		} while (s.equalsIgnoreCase("y"));
 
-		
-		
 		sc.close();
 	}
 

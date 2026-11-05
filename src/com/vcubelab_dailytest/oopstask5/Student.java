@@ -1,11 +1,10 @@
 package com.vcubelab_dailytest.oopstask5;
 
 public class Student {
-	
 
-	void  calculateGrade(int marks) {
+	void calculateGrade(int marks) {
 		System.out.println("Student Grade");
-		
+
 	}
 
 }

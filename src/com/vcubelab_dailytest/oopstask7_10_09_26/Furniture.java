@@ -4,17 +4,13 @@ public class Furniture extends Product {
 
 	String material;
 
-	
-	public Furniture(int productId, String productName, double price,String material) {
+	public Furniture(int productId, String productName, double price, String material) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
 		this.price = price;
-		this.material=material;
+		this.material = material;
 	}
-	
-	
-	
 
 	@Override
 	void displayProductDetails() {

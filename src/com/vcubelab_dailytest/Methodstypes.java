@@ -14,25 +14,22 @@ package com.vcubelab_dailytest;
 public class Methodstypes {
 
 	public static void main(String[] args) {
-		Methodstypes t=new Methodstypes();
+		Methodstypes t = new Methodstypes();
 		t.displays();
-		
-		
 
 	}
 
 	void displays() {
-		long accountnumber=10456646489L;
-		String AccountName="Karthik";
-		double Balance=257678.7679D;
-		String Account_Type="SavingsAcoount";
-		
-		System.out.println("Account Number      :"+accountnumber);
-		System.out.println("Account Holder Name :"+AccountName);
-		System.out.println("Balance             :" +Balance);
-		System.out.println("Account Type        :"+Account_Type);
-		System.out.println("----------------------------------");
+		long accountnumber = 10456646489L;
+		String AccountName = "Karthik";
+		double Balance = 257678.7679D;
+		String Account_Type = "SavingsAcoount";
 
+		System.out.println("Account Number      :" + accountnumber);
+		System.out.println("Account Holder Name :" + AccountName);
+		System.out.println("Balance             :" + Balance);
+		System.out.println("Account Type        :" + Account_Type);
+		System.out.println("----------------------------------");
 
 	}
 }

@@ -1,10 +1,10 @@
 package com.vcubelab_dailytest.oopstask9_14_09_26;
 
-public class CreditCard extends Payment{
+public class CreditCard extends Payment {
 
 	@Override
 	void pay(double amount) {
-		
+
 		transactionFee = amount * 0.02;
 
 		System.out.println("Amount: " + amount);

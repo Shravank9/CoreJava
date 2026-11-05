@@ -24,29 +24,28 @@ public class wrapperexmaple {
 	Integer ps;
 	Double pd;
 	Long pc;
-	
+
 	public static void main(String[] args) {
-		
-		wrapperexmaple t=new wrapperexmaple();
-		t.pid=101;
-		t.pp=10554.3;
-		t.pname="Moto edge x71";
-		t.prating=3.56;
-		t.Product_Available_Status=true;
-		t.ps=201;
-		t.pd=0.2;
-		t.pc=40120101233L;
-		
-		System.out.println("Product ID                :"+t.pid);
-		System.out.println("Product Name              :"+t.pname);
-		System.out.println("Product Price             :"+t.pp);
-		System.out.println("Product Rating            :"+t.prating);
-		System.out.println("Product Available Status  :"+t.Product_Available_Status);
-		System.out.println("Stock Quantity            :"+t.ps);
-		System.out.println("Discount Percentage       :"+t.pd);
-		System.out.println("Product Code              :"+t.pc);
+
+		wrapperexmaple t = new wrapperexmaple();
+		t.pid = 101;
+		t.pp = 10554.3;
+		t.pname = "Moto edge x71";
+		t.prating = 3.56;
+		t.Product_Available_Status = true;
+		t.ps = 201;
+		t.pd = 0.2;
+		t.pc = 40120101233L;
+
+		System.out.println("Product ID                :" + t.pid);
+		System.out.println("Product Name              :" + t.pname);
+		System.out.println("Product Price             :" + t.pp);
+		System.out.println("Product Rating            :" + t.prating);
+		System.out.println("Product Available Status  :" + t.Product_Available_Status);
+		System.out.println("Stock Quantity            :" + t.ps);
+		System.out.println("Discount Percentage       :" + t.pd);
+		System.out.println("Product Code              :" + t.pc);
 		System.out.println("-----------------------------------");
-		
 
 	}
 

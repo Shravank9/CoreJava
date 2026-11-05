@@ -5,64 +5,58 @@ import java.util.Scanner;
 public class Movie_Theater_Offers {
 
 	public static void main(String[] args) {
-	Scanner sc= new Scanner(System.in);	
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Select Ticket Type:");
 		System.out.println("1. Silver - Rs.200");
 		System.out.println("2. Gold - Rs.300");
 		System.out.println("3. Platinum - Rs.500");
 		System.out.println("4. Exit");
 		System.out.println("Enter you Choice:");
-		int choice=sc.nextInt();
+		int choice = sc.nextInt();
 
-	
-		
-		
-		switch(choice) {
-		
-		case  1->
-		{
-			double price =200;
+		switch (choice) {
+
+		case 1 -> {
+			double price = 200;
 			System.out.println("Enter your Age:");
-			int age=sc.nextInt();
-			if(age>=60) {
-				price=price-(0.10*price);
+			int age = sc.nextInt();
+			if (age >= 60) {
+				price = price - (0.10 * price);
 				System.out.println("Silver Ticket Price: Rs." + price);
-			}else {
-				
+			} else {
+
 				System.out.println("Silver Ticket Price: Rs." + price);
 			}
 		}
-		case 2->
-		{
-			double price =300;
+		case 2 -> {
+			double price = 300;
 			System.out.println("Enter your Age:");
-			int age=sc.nextInt();
-			if(age>=60) {
-				price=price-(0.10*price);
+			int age = sc.nextInt();
+			if (age >= 60) {
+				price = price - (0.10 * price);
 				System.out.println("Gold Ticket Price: Rs." + price);
-			}else {
+			} else {
 				System.out.println("Gold Ticket Price: Rs." + price);
 			}
-			
+
 		}
-		
-		case 3->
-		{
-			double price =500;
+
+		case 3 -> {
+			double price = 500;
 			System.out.println("Enter your Age:");
-			int age=sc.nextInt();
-			if(age>=60) {
-				price=price-(0.10*price);
-				
+			int age = sc.nextInt();
+			if (age >= 60) {
+				price = price - (0.10 * price);
+
 				System.out.println("Platinum Ticket Price: Rs." + price);
-			}else {
+			} else {
 				System.out.println("Platinum Ticket Price: Rs." + price);
 			}
-			
+
 		}
-		
-		case 4-> System.out.println("Thank you! Visit Again.");
-		default ->System.out.println("Invalid Selection");
+
+		case 4 -> System.out.println("Thank you! Visit Again.");
+		default -> System.out.println("Invalid Selection");
 		}
 		sc.close();
 

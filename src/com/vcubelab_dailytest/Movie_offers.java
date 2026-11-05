@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Movie_offers {
 
 	public static void main(String[] args) {
-	Scanner sc= new Scanner(System.in);	
-	 String  s= "";
-	
+		Scanner sc = new Scanner(System.in);
+		String s = "";
+
 		do {
 			System.out.println("Select Ticket Type:");
 			System.out.println("1. Silver - Rs.200");
@@ -15,66 +15,60 @@ public class Movie_offers {
 			System.out.println("3. Platinum - Rs.500");
 			System.out.println("4. Exit");
 			System.out.println("Enter you Choice:");
-			int choice=sc.nextInt();
-	     
-		
-		switch(choice) {
-		
-		
-		case  1->
-		{
-			double price =200;
-			System.out.println("Enter your Age:");
-			int age=sc.nextInt();
-			if(age>=60) {
-				price=price-(0.10*price);
-				System.out.println("Silver Ticket Price: Rs." + price);
-			}else {
-				
-				System.out.println("Silver Ticket Price: Rs." + price);
+			int choice = sc.nextInt();
+
+			switch (choice) {
+
+			case 1 -> {
+				double price = 200;
+				System.out.println("Enter your Age:");
+				int age = sc.nextInt();
+				if (age >= 60) {
+					price = price - (0.10 * price);
+					System.out.println("Silver Ticket Price: Rs." + price);
+				} else {
+
+					System.out.println("Silver Ticket Price: Rs." + price);
+				}
 			}
-		}
-		case 2->
-		{
-			double price =300;
-			System.out.println("Enter your Age:");
-			int age=sc.nextInt();
-			if(age>=60) {
-				price=price-(0.10*price);
-				System.out.println("Gold Ticket Price: Rs." + price);
-			}else {
-				System.out.println("Gold Ticket Price: Rs." + price);
+			case 2 -> {
+				double price = 300;
+				System.out.println("Enter your Age:");
+				int age = sc.nextInt();
+				if (age >= 60) {
+					price = price - (0.10 * price);
+					System.out.println("Gold Ticket Price: Rs." + price);
+				} else {
+					System.out.println("Gold Ticket Price: Rs." + price);
+				}
+
 			}
-			
-		}
-		
-		case 3->
-		{
-			double price =500;
-			System.out.println("Enter your Age:");
-			int age=sc.nextInt();
-			if(age>=60) {
-				price=price-(0.10*price);
-				
-				System.out.println("Platinum Ticket Price: Rs." + price);
-			}else {
-				System.out.println("Platinum Ticket Price: Rs." + price);
+
+			case 3 -> {
+				double price = 500;
+				System.out.println("Enter your Age:");
+				int age = sc.nextInt();
+				if (age >= 60) {
+					price = price - (0.10 * price);
+
+					System.out.println("Platinum Ticket Price: Rs." + price);
+				} else {
+					System.out.println("Platinum Ticket Price: Rs." + price);
+				}
+
 			}
-			
-		}
-		
-		case 4 -> {
-		    System.out.println("Thank you! Visit Again.");
-		    sc.close();
-		    return;
-		}
-		default ->System.out.println("Invalid Selection");
-		}
-		System.out.print("Do you want to continue? (Y/N): ");
-		s=sc.next();
-		}while(s.equalsIgnoreCase("y"));
+
+			case 4 -> {
+				System.out.println("Thank you! Visit Again.");
+				sc.close();
+				return;
+			}
+			default -> System.out.println("Invalid Selection");
+			}
+			System.out.print("Do you want to continue? (Y/N): ");
+			s = sc.next();
+		} while (s.equalsIgnoreCase("y"));
 		System.out.println("Exit");
-		
 
 	}
 

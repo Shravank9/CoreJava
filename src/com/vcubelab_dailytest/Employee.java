@@ -21,51 +21,46 @@ salary
 package com.vcubelab_dailytest;
 
 public class Employee {
-	static  String companyName;
+	static String companyName;
 	static String location;
-	
+
 	static {
-		companyName="Anthropic";
-		location="Hyderabad";
-		
+		companyName = "Anthropic";
+		location = "Hyderabad";
+
 	}
 	{
-	    System.out.println("Instance Block Executed");
-		 System.out.println("------------------------------");
+		System.out.println("Instance Block Executed");
+		System.out.println("------------------------------");
 
-	    
 	}
-	
+
 	int salary;
 	String employeeName;
-	
 
 	public static void main(String[] args) {
-		
-		Employee e1=new Employee();
-		
-		e1.salary=10000;
-		e1.employeeName="Varshith";
-		
-		 System.out.println("companyName:"+companyName);
-		 System.out.println("Location:"+location);
-		 System.out.println("EmployeeName:"+e1.employeeName);
-		 System.out.println("Salary:"+e1.salary);
-		 System.out.println("------------------------------");
-		 
-		 Employee e2=new Employee();
-		 
-	    e2.salary=250000;
-		e2.employeeName="Ravi";
-		
-		 System.out.println("companyName:"+companyName);
-		 System.out.println("Location:"+location);
-		 System.out.println("EmployeeName:"+e2.employeeName);
-		 System.out.println("Salary:"+e2.salary);
-		 System.out.println("------------------------------");
-		 
-		 
-		
+
+		Employee e1 = new Employee();
+
+		e1.salary = 10000;
+		e1.employeeName = "Varshith";
+
+		System.out.println("companyName:" + companyName);
+		System.out.println("Location:" + location);
+		System.out.println("EmployeeName:" + e1.employeeName);
+		System.out.println("Salary:" + e1.salary);
+		System.out.println("------------------------------");
+
+		Employee e2 = new Employee();
+
+		e2.salary = 250000;
+		e2.employeeName = "Ravi";
+
+		System.out.println("companyName:" + companyName);
+		System.out.println("Location:" + location);
+		System.out.println("EmployeeName:" + e2.employeeName);
+		System.out.println("Salary:" + e2.salary);
+		System.out.println("------------------------------");
 
 	}
 

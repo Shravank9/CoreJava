@@ -27,14 +27,11 @@ public class BookSerializationDemo {
 		System.out.println("Serializable ended");
 		System.out.println("De-Serializable Started");
 
-
-		
-		
 		FileInputStream fis = new FileInputStream("C:\\Users\\shrav\\OneDrive\\Desktop\\java learning\\test.ser");
-		
+
 		try (ObjectInputStream ois = new ObjectInputStream(fis)) {
 			Book book1 = (Book) ois.readObject();
-			
+
 			System.out.println(book1.bookId);
 			System.out.println(book1.author);
 			System.out.println(book1.title);

@@ -1,6 +1,6 @@
 package com.vcubelab_dailytest.oopstask8_15_09_26;
 
-public class Triangle extends Shape{
+public class Triangle extends Shape {
 
 	@Override
 	void area() {
@@ -8,7 +8,7 @@ public class Triangle extends Shape{
 		double h = sc.nextDouble();
 		System.out.println("Enter the Base Of the Triangle");
 		double b = sc.nextDouble();
-		System.out.println("the are of the Triangle is the :" +0.5* (h* b));		
+		System.out.println("the are of the Triangle is the :" + 0.5 * (h * b));
 	}
 
 }

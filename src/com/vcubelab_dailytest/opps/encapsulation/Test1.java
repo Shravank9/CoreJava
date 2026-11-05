@@ -32,8 +32,7 @@ public class Test1 {
 		System.out.println("Employee Password:" + t.getPassword());
 
 		System.out.println("Main Ended Started");
-		
-		
+
 		sc.close();
 
 	}

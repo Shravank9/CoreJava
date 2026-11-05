@@ -15,57 +15,57 @@ Matches Played   : 100
 Total Runs       : 5000
 Average Runs     : 50.0*/
 
-
 package com.vcubelab_dailytest;
+
 import java.util.Scanner;
 
 public class Cricketplayer1 {
-	
+
 	String Name;
 	int Matches_played;
 	int runs;
-	
-	Cricketplayer1(String Name,int Matches_played,int runs){
-		//System.out.println("Parameterized constructor is called");
-		this.Name=Name;
-		this.Matches_played=Matches_played;
-		this.runs=runs;
+
+	Cricketplayer1(String Name, int Matches_played, int runs) {
+		// System.out.println("Parameterized constructor is called");
+		this.Name = Name;
+		this.Matches_played = Matches_played;
+		this.runs = runs;
 	}
-	
+
 	public static void main(String[] args) {
 		System.out.println("Main Method Started");
-		
-		Scanner sc=new Scanner(System.in);
-		
+
+		Scanner sc = new Scanner(System.in);
+
 		System.out.println("Enter the player Name:");
-		String a=sc.nextLine();
-		
+		String a = sc.nextLine();
+
 		System.out.println("Enter Matches Played:");
-		int b=sc.nextInt();
-		
+		int b = sc.nextInt();
+
 		System.out.println("Enter Total Runs:");
-		int c=sc.nextInt();
-		
-		Cricketplayer1 t= new Cricketplayer1(a,b,c);
+		int c = sc.nextInt();
+
+		Cricketplayer1 t = new Cricketplayer1(a, b, c);
 		t.display();
-		double y=t.calculate();
-		
-		System.out.println("Average Runs     :"+y);
-		
-		
+		double y = t.calculate();
+
+		System.out.println("Average Runs     :" + y);
+
 		System.out.println("Main Method Ended");
 
 	}
+
 	double calculate() {
-		double  avg=runs/Matches_played;
+		double avg = runs / Matches_played;
 		return avg;
-		
+
 	}
-	
+
 	void display() {
-		System.out.println("Player Name      :"+Name);
-		System.out.println("Matches Played   :"+Matches_played);
-		System.out.println("Total Runs       :"+runs);
+		System.out.println("Player Name      :" + Name);
+		System.out.println("Matches Played   :" + Matches_played);
+		System.out.println("Total Runs       :" + runs);
 	}
 
 }

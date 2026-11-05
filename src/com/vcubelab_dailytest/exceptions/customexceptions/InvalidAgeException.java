@@ -1,13 +1,11 @@
 package com.vcubelab_dailytest.exceptions.customexceptions;
 
-public class InvalidAgeException extends Exception{
+public class InvalidAgeException extends Exception {
 
 	public InvalidAgeException(String msg) {
 		super(msg);
 		System.out.println("Age is Invalid!");
 	}
-
-	 
 
 }
 //Today's Assignment

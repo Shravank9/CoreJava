@@ -1,29 +1,27 @@
 package com.vcubelab_dailytest.oopstask7_10_09_26;
 
 public class Clothing extends Product {
-	
+
 	String size;
-	
-	
-	
-	public Clothing(int productId, String productName, double price,String size) {
+
+	public Clothing(int productId, String productName, double price, String size) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
 		this.price = price;
-		this.size=size;
-		
+		this.size = size;
+
 	}
-	
+
 	@Override
 	void displayProductDetails() {
 		super.displayProductDetails();
-		System.out.println("The size of cloth :"+size);
+		System.out.println("The size of cloth :" + size);
 	}
-	
+
 	@Override
 	void calculateDiscount() {
-		
+
 		double discount = (15 / 100.0) * price;
 		System.out.println("dicount u got is:" + discount);
 		System.out.println("The price you need to pay is after discount is :" + (price - discount));

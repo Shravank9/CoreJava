@@ -30,7 +30,7 @@ public class CheckArrayPalindrome {
 			j--;
 
 		}
-		
+
 		if (palindrome) {
 			System.out.println("True");
 		} else {

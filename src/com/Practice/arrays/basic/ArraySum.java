@@ -14,13 +14,13 @@ public class ArraySum {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
-		
-		int arr_sum=0;
-		for(int a:arr) {
-			arr_sum+=a;
-			
+
+		int arr_sum = 0;
+		for (int a : arr) {
+			arr_sum += a;
+
 		}
-		System.out.println("Sum: "+arr_sum);
+		System.out.println("Sum: " + arr_sum);
 		sc.close();
 	}
 
@@ -37,4 +37,3 @@ public class ArraySum {
 //
 //Output:
 //Sum: 150
-

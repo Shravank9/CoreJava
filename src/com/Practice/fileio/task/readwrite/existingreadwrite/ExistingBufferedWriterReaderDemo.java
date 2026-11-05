@@ -32,7 +32,7 @@ public class ExistingBufferedWriterReaderDemo {
 						System.out.println("Enter the content to add it:");
 						String content = sc.nextLine();
 
-						try (BufferedWriter bw = new BufferedWriter(new FileWriter(f,true))) {
+						try (BufferedWriter bw = new BufferedWriter(new FileWriter(f, true))) {
 							bw.newLine();
 							bw.write(content);
 							System.out.println("Content added successfully!");
@@ -64,12 +64,11 @@ public class ExistingBufferedWriterReaderDemo {
 		// read the content from the file:
 
 		try (BufferedReader br = new BufferedReader(new FileReader(f))) {
-			
+
 			System.out.println("\nFinal File Content:");
 
-			
 			String s = br.readLine();
-			
+
 			while (s != null) {
 				System.out.println(s);
 				s = br.readLine();
@@ -87,7 +86,6 @@ public class ExistingBufferedWriterReaderDemo {
 		System.out.println(
 				"Successfully Checked Existing File, Written Content Using BufferedWriter and Read Content Using BufferedReader");
 
-		
 	}
 
 }

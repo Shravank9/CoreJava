@@ -13,13 +13,11 @@ public class Main {
 		Student s = null;
 
 		while (true) {
-		System.out.println("Which One You want to Select?");
-		System.out.println("1) EngineeringStudent\n2) MedicalStudent\n3) ManagementStudent\n4) Exit");
+			System.out.println("Which One You want to Select?");
+			System.out.println("1) EngineeringStudent\n2) MedicalStudent\n3) ManagementStudent\n4) Exit");
 
-		System.out.println("Enter the choice:");
-		int choice = sc.nextInt();
-
-		
+			System.out.println("Enter the choice:");
+			int choice = sc.nextInt();
 
 			switch (choice) {
 
@@ -55,12 +53,9 @@ public class Main {
 
 			s.calculateGrade(marks);
 
-
 		}
-		
 
 	}
-
 
 }
 //Today's Assignment

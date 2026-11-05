@@ -1,10 +1,10 @@
 package com.vcubelab_dailytest.oopstask4;
 
-public class Orderdetails   {
+public class Orderdetails {
 
-	private int orderId=12345;
-	private String customerName="Sura";
-	private double price=500.00;
+	private int orderId = 12345;
+	private String customerName = "Sura";
+	private double price = 500.00;
 
 	public int getOrderId() {
 		return orderId;
@@ -30,21 +30,16 @@ public class Orderdetails   {
 		this.price = price;
 	}
 
-	
-	public Orderdetails() { 
-		
+	public Orderdetails() {
+
 	}
-	
-	
-	
+
 	public Orderdetails(int orderId, String customerName, double price) {
 		super();
 		this.orderId = orderId;
 		this.customerName = customerName;
 		this.price = price;
 	}
-
-
 
 	void displayDetails() {
 

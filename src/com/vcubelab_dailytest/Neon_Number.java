@@ -5,34 +5,33 @@ import java.util.Scanner;
 public class Neon_Number {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number");
-		int a=sc.nextInt();
-		int b=number_check(a);
-		 if (b==a) {
-        	 System.out.printf(" %d is a Neon Number",a);
-         }else {
-        	 System.out.printf(" %d is Not a Neon Number",a); 
-         
-         }
+		int a = sc.nextInt();
+		int b = number_check(a);
+		if (b == a) {
+			System.out.printf(" %d is a Neon Number", a);
+		} else {
+			System.out.printf(" %d is Not a Neon Number", a);
+
+		}
 		sc.close();
-		
+
 	}
 
- static int number_check(int a) {
-         int c=Math.powExact(a,2);
-         int sum=0;
-         int digit=0;
-         for(;c>0;c=c/10) {
-           digit  =c%10;
-           sum+=digit;
-         }
-        
+	static int number_check(int a) {
+		int c = Math.powExact(a, 2);
+		int sum = 0;
+		int digit = 0;
+		for (; c > 0; c = c / 10) {
+			digit = c % 10;
+			sum += digit;
+		}
+
 		return sum;
 	}
 
 }
-
 
 //Java Task
 //Question:

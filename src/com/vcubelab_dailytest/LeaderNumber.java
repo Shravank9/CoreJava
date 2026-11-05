@@ -29,8 +29,8 @@ public class LeaderNumber {
 					break;
 				}
 			}
-			if(leader) {
-				System.out.println(arr[i]+" ");
+			if (leader) {
+				System.out.println(arr[i] + " ");
 			}
 		}
 

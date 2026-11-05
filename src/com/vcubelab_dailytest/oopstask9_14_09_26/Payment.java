@@ -1,6 +1,6 @@
 package com.vcubelab_dailytest.oopstask9_14_09_26;
 
-public abstract class Payment{
+public abstract class Payment {
 
 	double amount;
 	double transactionFee;

@@ -1,4 +1,5 @@
 package com.vcubelab_dailytest;
+
 import java.util.Scanner;
 
 public class Magic_Number1 {
@@ -18,19 +19,18 @@ public class Magic_Number1 {
 	}
 
 	private static boolean magicnumber(int a) {
-		
-		if(a<10) {
-			return a==1;
+
+		if (a < 10) {
+			return a == 1;
 		}
-		int sum=0;
-		while(a>0) {
-			int r=a%10;
-			sum+=r;
-			a/=10;
+		int sum = 0;
+		while (a > 0) {
+			int r = a % 10;
+			sum += r;
+			a /= 10;
 		}
 		return magicnumber(sum);
-		
-		
+
 	}
 
 }

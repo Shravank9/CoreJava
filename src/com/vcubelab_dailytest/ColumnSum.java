@@ -24,20 +24,15 @@ public class ColumnSum {
 
 			}
 		}
-		
-		
-		for(int j=0;j<arr[0].length;j++) {
-			int sum=0;
-			for(int i=0;i<arr.length;i++) {
-				sum+=arr[i][j];
+
+		for (int j = 0; j < arr[0].length; j++) {
+			int sum = 0;
+			for (int i = 0; i < arr.length; i++) {
+				sum += arr[i][j];
 			}
-			System.out.printf("Column Sum Of %d ",j);
+			System.out.printf("Column Sum Of %d ", j);
 			System.out.println(sum);
 		}
-		
-		
-	
-				
 
 		sc.close();
 

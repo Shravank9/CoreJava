@@ -29,7 +29,7 @@ public class MostFrequentElement {
 
 		int maxCount = 0;
 		int element = 0;
-		
+
 		for (int i = 0; i < arr.length - 1; i++) {
 			int count = 0;
 

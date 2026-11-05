@@ -5,8 +5,6 @@ public class DuplicateUsernameException extends Exception {
 	public DuplicateUsernameException(String s) {
 		super(s);
 	}
-	
-	
 
 }
 //Today's Assignment

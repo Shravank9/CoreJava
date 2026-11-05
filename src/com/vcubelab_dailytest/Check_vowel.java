@@ -8,25 +8,23 @@ public class Check_vowel {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the character:");
 		char c = sc.next().charAt(0);
-		
-		String result = (c == 'A') ? "Vowel" :
-            (c == 'a') ? "Vowel" :
-            (c == 'E') ? "Vowel" :
-            (c == 'e') ? "Vowel" :
-            (c == 'I') ? "Vowel" :
-            (c == 'i') ? "Vowel" :
-            (c == 'O') ? "Vowel" :
-            (c == 'o') ? "Vowel" :
-            (c == 'U') ? "Vowel" :
-            (c == 'u') ? "Vowel" :
-            "Consonant";
-		System.out.println("Result:"+result);
+
+		String result = (c == 'A') ? "Vowel"
+				: (c == 'a') ? "Vowel"
+						: (c == 'E') ? "Vowel"
+								: (c == 'e') ? "Vowel"
+										: (c == 'I') ? "Vowel"
+												: (c == 'i') ? "Vowel"
+														: (c == 'O') ? "Vowel"
+																: (c == 'o') ? "Vowel"
+																		: (c == 'U') ? "Vowel"
+																				: (c == 'u') ? "Vowel" : "Consonant";
+		System.out.println("Result:" + result);
 		sc.close();
 
 	}
 
 }
-
 
 //
 //Java 

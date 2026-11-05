@@ -1,21 +1,19 @@
 package com.vcubelab_dailytest.oopstask5_02_09_2026;
 
-public class Car  extends Vehicle{
+public class Car extends Vehicle {
 
-	
-	double speed=100;
-	
+	double speed = 100;
+
 	@Override
-	void display(){
-	 System.out.println("The speed of the car:"+speed);	
+	void display() {
+		System.out.println("The speed of the car:" + speed);
 	}
-	
+
 	public static void main(String[] args) {
-		
-		Vehicle v=new Car();
-		System.out.println("Speed:"+v.speed);
+
+		Vehicle v = new Car();
+		System.out.println("Speed:" + v.speed);
 		v.display();
-		
 
 	}
 

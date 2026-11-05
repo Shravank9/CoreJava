@@ -23,8 +23,7 @@ public class MissingNumber {
 		int n = size + 1;
 		int sum1 = n * (n + 1) / 2;
 		System.out.println("Missing Number:" + (sum1 - sum));
-		
-		
+
 		sc.close();
 
 	}

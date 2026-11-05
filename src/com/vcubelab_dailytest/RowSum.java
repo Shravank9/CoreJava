@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RowSum {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		System.err.println("Enter the size of row size");
@@ -25,19 +25,18 @@ public class RowSum {
 			}
 		}
 
-
-		
 		for (int i = 0; i < arr.length; i++) {
-			int sum=0;
+			int sum = 0;
 			for (int j = 0; j < arr[i].length; j++) {
 				sum += arr[i][j];
 			}
-			System.out.printf("Row Sum Of %d: ",i);
+			System.out.printf("Row Sum Of %d: ", i);
 			System.out.println(sum);
-			
+
 		}
-		
-		sc.close();;
+
+		sc.close();
+		;
 	}
 
 }
