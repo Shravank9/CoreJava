@@ -41,7 +41,7 @@ public class CheckArrayHasEqualAdjacentElements {
 			start++;
 
 		}
-		
+
 		if (adjacent) {
 			System.out.println("True");
 		} else {

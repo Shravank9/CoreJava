@@ -1,20 +1,19 @@
 package com.vcubelab_dailytest;
+
 import java.util.Scanner;
 
-
 public class Swap {
-	
+
 	int a;
 	int b;
-	
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		Swap t=new Swap();
+		Scanner sc = new Scanner(System.in);
+		Swap t = new Swap();
 		System.out.println("Enter the value of the a");
-		t.a=sc.nextInt();
+		t.a = sc.nextInt();
 		System.out.println("Enter the value of the b");
-		t.b=sc.nextInt();
+		t.b = sc.nextInt();
 
 		System.out.println("Before Swapping:");
 		System.out.println("A = " + t.a);
@@ -27,9 +26,6 @@ public class Swap {
 		System.out.println("After Swapping:");
 		System.out.println("A = " + t.a);
 		System.out.println("B = " + t.b);
-		
-		
-		
 
 	}
 

@@ -26,7 +26,7 @@ public class LinearSearch {
 		for (int n : arr) {
 			if (a == n) {
 				System.out.println("Element Found ");
-				status=true;
+				status = true;
 				break;
 			}
 		}

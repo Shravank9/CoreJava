@@ -8,17 +8,19 @@ public class Magic_Number {
 		boolean status = false;
 
 		int temp = a;
-		
-		while(a>9) {
-			int sum=0;
-			while(a>0) {
-				int r=a%10;
-				sum+=r;
-				a/=10;
+
+		while (a > 9) {
+			int sum = 0;
+			while (a > 0) {
+				int r = a % 10;
+				sum += r;
+				a /= 10;
 			}
-			a=sum;
+			a = sum;
 		}
-		if(a==1) { status=true;}
+		if (a == 1) {
+			status = true;
+		}
 
 		return status;
 	}

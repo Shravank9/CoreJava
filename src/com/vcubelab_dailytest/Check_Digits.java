@@ -5,24 +5,21 @@ import java.util.Scanner;
 public class Check_Digits {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number :");
-		int a=sc.nextInt();
-		
-		if(a<10) {
+		int a = sc.nextInt();
+
+		if (a < 10) {
 			System.out.println("It is One Digit Number");
-		}else if(a<100) {
+		} else if (a < 100) {
 			System.out.println("It is Two Digit Number ");
-		}else if(a<1000) {
+		} else if (a < 1000) {
 			System.out.println("It is Three Digit Number ");
-		}
-		else {
+		} else {
 			System.out.println("More Than Three Digits ");
-			
+
 		}
 		sc.close();
-		
-		
 
 	}
 

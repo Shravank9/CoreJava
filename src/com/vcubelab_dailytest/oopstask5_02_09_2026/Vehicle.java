@@ -1,15 +1,13 @@
 package com.vcubelab_dailytest.oopstask5_02_09_2026;
 
 public class Vehicle {
-	
-	
-  	double speed =50;
-  	
-  	void display(){
-  		System.out.println("The vehicle spped is "+speed);
-  		
-  	}
- 
+
+	double speed = 50;
+
+	void display() {
+		System.out.println("The vehicle spped is " + speed);
+
+	}
 
 }
 //Today's Assignment

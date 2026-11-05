@@ -2,7 +2,7 @@ package com.vcubelab_dailytest.oopstask2;
 
 import java.util.Scanner;
 
-public class Main1   {
+public class Main1 {
 
 	public static void main(String[] args) {
 
@@ -10,8 +10,7 @@ public class Main1   {
 		System.out.println("Enter the balance:");
 		double bal = sc.nextDouble();
 
-		BankAccount1 t = new BankAccount1("675327367733","Sura",bal);
-
+		BankAccount1 t = new BankAccount1("675327367733", "Sura", bal);
 
 		while (true) {
 			System.out.println("1)Depoist \n2)Withdrawl \n3)Final Balance \n4)Exit");

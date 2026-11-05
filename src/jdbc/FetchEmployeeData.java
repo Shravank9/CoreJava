@@ -16,7 +16,7 @@ public class FetchEmployeeData {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/learn", "root", "root");
-			s = con.createStatement(); 
+			s = con.createStatement();
 
 			String sql = "Select * from employee";
 			rs = s.executeQuery(sql);

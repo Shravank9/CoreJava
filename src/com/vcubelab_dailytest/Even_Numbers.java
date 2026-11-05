@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class Even_Numbers {
 
 	public static void main(String[] args) {
-		
-		Scanner sc=new Scanner(System.in);
+
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your number where you want from start it!");
-		int a=sc.nextInt();
+		int a = sc.nextInt();
 		System.out.println("Enter your number where you want from End it!");
-		int b=sc.nextInt();
-		for(int i=a;i<b;i++) {
-			if(i%2==0) {
+		int b = sc.nextInt();
+		for (int i = a; i < b; i++) {
+			if (i % 2 == 0) {
 				System.out.println(i);
 			}
 		}
@@ -20,8 +20,6 @@ public class Even_Numbers {
 	}
 
 }
-
-
 
 //Today's Assignment
 //Java

@@ -38,8 +38,6 @@ public class Student extends Person {
 		System.out.println("Age of the Student:" + s.getAge());
 		System.out.println("Collage of the Student:" + s.getCollegeName());
 
-		
-		
 		sc.close();
 	}
 

@@ -22,10 +22,10 @@ public class DAOlayer {
 
 			System.out.println("--------------------------------------------------------------");
 			while (rs.next()) {
-				System.out.print(rs.getInt(1)      + "  ");
-				System.out.print(rs.getString(2)   + "  ");
-				System.out.print(rs.getDouble(3)   + "  ");
-				System.out.print(rs.getString(4)   + "  ");
+				System.out.print(rs.getInt(1) + "  ");
+				System.out.print(rs.getString(2) + "  ");
+				System.out.print(rs.getDouble(3) + "  ");
+				System.out.print(rs.getString(4) + "  ");
 				System.out.println();
 
 			}
@@ -46,14 +46,12 @@ public class DAOlayer {
 
 			System.out.println("--------------------------------------------------------------");
 			while (rs.next()) {
-				
-				 
-				System.out.print(rs.getInt(1)      + "  ");
-				System.out.print(rs.getString(2)   + " ");
-				System.out.print(rs.getDouble(3)   + "  ");
-				System.out.print(rs.getString(4)   + "  ");
-				System.out.println();
 
+				System.out.print(rs.getInt(1) + "  ");
+				System.out.print(rs.getString(2) + " ");
+				System.out.print(rs.getDouble(3) + "  ");
+				System.out.print(rs.getString(4) + "  ");
+				System.out.println();
 
 			}
 
@@ -75,7 +73,7 @@ public class DAOlayer {
 
 			int n = ps.executeUpdate();
 			if (n > 0) {
-				System.out.println(n +" "+ "Rows Affected");
+				System.out.println(n + " " + "Rows Affected");
 			} else {
 				System.out.println("Something went wrong");
 			}
@@ -96,7 +94,7 @@ public class DAOlayer {
 
 			int n = ps.executeUpdate();
 			if (n > 0) {
-				System.out.println(n +" "+ "Rows Affected");
+				System.out.println(n + " " + "Rows Affected");
 			} else {
 				System.out.println("Something went wrong");
 			}
@@ -115,7 +113,7 @@ public class DAOlayer {
 			ps.setInt(1, s.getEmpno());
 			int n = ps.executeUpdate();
 			if (n > 0) {
-				System.out.println(n +" "+ "Rows Deleted");
+				System.out.println(n + " " + "Rows Deleted");
 			} else {
 				System.out.println("Something went Wrong");
 			}

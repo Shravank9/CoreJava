@@ -2,14 +2,13 @@ package com.Practice.fileio.task1_30_09_26;
 
 import java.io.Serializable;
 
-public class Book implements Serializable{
+public class Book implements Serializable {
 
 	transient int bookId;
 	String title;
 	String author;
 	double price;
-	
-	
+
 	public Book(int bookId, String title, String author, double price) {
 		super();
 		this.bookId = bookId;
@@ -17,8 +16,6 @@ public class Book implements Serializable{
 		this.author = author;
 		this.price = price;
 	}
-	
-	
 
 }
 /// Today's Assignment

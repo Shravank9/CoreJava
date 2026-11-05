@@ -25,29 +25,28 @@ public class Javadattypes {
 	float bonus;
 	char egrade;
 	boolean status;
+
 	public static void main(String[] args) {
-          Javadattypes t=new Javadattypes();
-          
-          t.eid=101;
-          t.esal=70000;
-          t.eexper=2.5f;
-          t.working=340;
-          t.phone=9567546745L;
-          t.bonus=0.2f;
-          t.egrade='A';
-          t.status=true;
-          
-          
-          
-          System.out.println("Employee ID                   :"  +t.eid);
-          System.out.println("Employee Grade                :"+t.egrade);
-          System.out.println("Employee Salary               :"+t.esal);
-          System.out.println("Permanent Employee Status     :"+t.status);
-          System.out.println("Employee Experience (in years):"+t.eexper);
-          System.out.println("Working Days                  :"+t.working);
-          System.out.println("Phone Number                  :"+t.phone);
-          System.out.println("Bonus Amount                  :"+t.bonus);
-          System.out.println("--------------------------------");
+		Javadattypes t = new Javadattypes();
+
+		t.eid = 101;
+		t.esal = 70000;
+		t.eexper = 2.5f;
+		t.working = 340;
+		t.phone = 9567546745L;
+		t.bonus = 0.2f;
+		t.egrade = 'A';
+		t.status = true;
+
+		System.out.println("Employee ID                   :" + t.eid);
+		System.out.println("Employee Grade                :" + t.egrade);
+		System.out.println("Employee Salary               :" + t.esal);
+		System.out.println("Permanent Employee Status     :" + t.status);
+		System.out.println("Employee Experience (in years):" + t.eexper);
+		System.out.println("Working Days                  :" + t.working);
+		System.out.println("Phone Number                  :" + t.phone);
+		System.out.println("Bonus Amount                  :" + t.bonus);
+		System.out.println("--------------------------------");
 
 	}
 

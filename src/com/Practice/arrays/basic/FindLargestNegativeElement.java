@@ -31,14 +31,14 @@ public class FindLargestNegativeElement {
 
 		int start = 0;
 		int end = arr.length;
-		
+
 		boolean found = false;
 
 		while (start < end) {
 
 			if (larneg < arr[start] && arr[start] < 0) {
 				larneg = arr[start];
-				found=true;
+				found = true;
 			}
 			start++;
 		}

@@ -1,7 +1,7 @@
 package com.vcubelab_dailytest.oopstask4;
 
 public interface Foodorder {
-	
+
 	void prepareFood();
 
 }

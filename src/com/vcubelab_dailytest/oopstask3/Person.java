@@ -1,9 +1,9 @@
 package com.vcubelab_dailytest.oopstask3;
 
-public class Person   {
-	
+public class Person {
+
 	private String name;
-	
+
 	private int age;
 
 	public String getName() {
@@ -21,7 +21,6 @@ public class Person   {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
 
 }
 

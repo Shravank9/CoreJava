@@ -7,11 +7,6 @@ public class InvalidPasswordException extends Exception {
 		System.out.println("Invalid credentials!");
 	}
 
-	
-		
-	
-	
-
 }
 //Today's Assignment
 //

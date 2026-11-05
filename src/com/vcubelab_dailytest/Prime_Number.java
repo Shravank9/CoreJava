@@ -1,4 +1,5 @@
 package com.vcubelab_dailytest;
+
 import java.util.Scanner;
 
 public class Prime_Number {

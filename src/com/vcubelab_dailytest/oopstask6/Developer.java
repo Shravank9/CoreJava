@@ -1,14 +1,13 @@
 package com.vcubelab_dailytest.oopstask6;
 
-public class Developer implements Attendance{
+public class Developer implements Attendance {
 
 	@Override
 	public void markAttendance() {
 		System.out.println("attendence from  Developer");
-		
+
 	}
 
-	
 }
 //Today's Assignment
 //Java-

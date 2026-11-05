@@ -1,14 +1,13 @@
 package com.vcubelab_dailytest.oopstask4;
 
 public class BurgerOrder extends Orderdetails implements Foodorder {
-	
+
 	@Override
 	public void prepareFood() {
-		System.out.println("Preparing Burger...");		
+		System.out.println("Preparing Burger...");
 	}
 
 	public static void main(String[] args) {
-	
 
 	}
 

@@ -105,7 +105,7 @@ public class Passengerbooking {
 		} catch (ArithmeticException e) {
 			System.out.println("ArithmeticException: Cannot divide by zero.");
 		}
-		
+
 		System.out.println("hi");
 
 		sc.close();

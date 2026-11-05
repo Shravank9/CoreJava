@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Happy_Number1 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the Number:");
 		int a = sc.nextInt();
@@ -21,18 +21,17 @@ public class Happy_Number1 {
 	}
 
 	private static boolean happynumber(int a) {
-		
-		if(a<10) {
-			return a==1;
+
+		if (a < 10) {
+			return a == 1;
 		}
-		int sum=0;
-		while(a>0) {
-			int r=a%10;
-			sum+=Math.powExact(r, 2);
-			a/=10;
+		int sum = 0;
+		while (a > 0) {
+			int r = a % 10;
+			sum += Math.powExact(r, 2);
+			a /= 10;
 		}
-		
-		
+
 		return happynumber(sum);
 	}
 

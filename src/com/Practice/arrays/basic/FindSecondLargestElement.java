@@ -28,7 +28,7 @@ public class FindSecondLargestElement {
 
 		int first_Largest = arr[0];
 		int second_Largest = Integer.MIN_VALUE;
-		
+
 		for (int n : arr) {
 			if (n > first_Largest) {
 				second_Largest = first_Largest;

@@ -5,21 +5,18 @@ import java.util.Scanner;
 public class Simple_Calculator {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		
+		Scanner sc = new Scanner(System.in);
+
 		System.out.println("Enter the the first number:");
-		int a=sc.nextInt();
+		int a = sc.nextInt();
 		System.out.println("Enter the second number:");
-		int b=sc.nextInt();
-		
+		int b = sc.nextInt();
+
 		System.out.println("Enter operator (+ or -):");
-		char c=sc.next().charAt(0);
-		String   result=(c=='+')?String.valueOf((a+b)):
-			         (c=='-')?String.valueOf(a-b):"Invalid Operator";
-		System.out.println("Result:"+result);
+		char c = sc.next().charAt(0);
+		String result = (c == '+') ? String.valueOf((a + b)) : (c == '-') ? String.valueOf(a - b) : "Invalid Operator";
+		System.out.println("Result:" + result);
 		sc.close();
-		
-		
 
 	}
 

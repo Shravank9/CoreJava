@@ -33,55 +33,50 @@
 //Account Number : 1234567890
 //Balance        : 50000.0
 
-
 package com.vcubelab_dailytest;
 
 public class BankAccount {
 	String accountholder;
 	long accountnumber;
 	double balance;
-	
+
 	public BankAccount() {
 		this("Unknown");
 	}
-	
-	BankAccount(String accountholder){
-		this( accountholder,0);
+
+	BankAccount(String accountholder) {
+		this(accountholder, 0);
 	}
-	
-	BankAccount(String accountholder,long accountnumber){
-		this(accountholder,accountnumber,0.0);
-		
+
+	BankAccount(String accountholder, long accountnumber) {
+		this(accountholder, accountnumber, 0.0);
+
 	}
-	
-	BankAccount(String accountholder,long accountnumber,double balance){
-		this.accountholder=accountholder;
-		this.accountnumber=accountnumber;
-		this.balance=balance;
-		
+
+	BankAccount(String accountholder, long accountnumber, double balance) {
+		this.accountholder = accountholder;
+		this.accountnumber = accountnumber;
+		this.balance = balance;
+
 	}
-	
+
 	void display() {
-		System.out.println("Account Holder                                :"+accountholder);
-		System.out.println("Account Number                                :"+accountnumber);
-		System.out.println("Balance                                       :"+balance);
+		System.out.println("Account Holder                                :" + accountholder);
+		System.out.println("Account Number                                :" + accountnumber);
+		System.out.println("Balance                                       :" + balance);
 		System.out.println("______________________________________________________________________");
 	}
 
 	public static void main(String[] args) {
-		
-		BankAccount t= new BankAccount();
+
+		BankAccount t = new BankAccount();
 		t.display();
-		BankAccount t1= new BankAccount("Krishna");
+		BankAccount t1 = new BankAccount("Krishna");
 		t1.display();
-		BankAccount t2= new BankAccount("Krishna",76757657757L);
+		BankAccount t2 = new BankAccount("Krishna", 76757657757L);
 		t2.display();
-		BankAccount t3= new BankAccount("Krishna",76757657757L,50000);
+		BankAccount t3 = new BankAccount("Krishna", 76757657757L, 50000);
 		t3.display();
-		
-		
-		
-		
 
 	}
 

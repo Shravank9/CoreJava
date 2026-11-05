@@ -4,16 +4,13 @@ public class Electronics extends Product {
 
 	String brand;
 
-	public Electronics(int productId, String productName, double price,String brand) {
+	public Electronics(int productId, String productName, double price, String brand) {
 		this.productId = productId;
 		this.productName = productName;
 		this.price = price;
-		this.brand=brand;
+		this.brand = brand;
 	}
-	
-	
-	
-	
+
 	@Override
 	void displayProductDetails() {
 		super.displayProductDetails();

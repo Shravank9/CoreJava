@@ -16,7 +16,7 @@ public class FindMiddleElement {
 			sc.close();
 			return;
 		}
-		
+
 		int[] arr = new int[size];
 
 		System.out.printf("Enter %d array elements:%n", size);

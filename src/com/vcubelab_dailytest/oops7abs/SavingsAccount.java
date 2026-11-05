@@ -1,13 +1,13 @@
 package com.vcubelab_dailytest.oops7abs;
 
-public class SavingsAccount extends Account{
+public class SavingsAccount extends Account {
 
 	@Override
 	void calculateInterest() {
-		double roi=8.5;
-		
-		System.out.println("Savings Account Interest:"+roi+"%");
-		
+		double roi = 8.5;
+
+		System.out.println("Savings Account Interest:" + roi + "%");
+
 	}
 
 }

@@ -6,7 +6,7 @@ public class Circle extends Shape {
 	void area() {
 		System.out.println("Enter the radius of the circle");
 		double r = sc.nextDouble();
-		System.out.println("the area of the circle is the :" + Math.PI * r*r);
+		System.out.println("the area of the circle is the :" + Math.PI * r * r);
 
 	}
 

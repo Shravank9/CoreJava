@@ -29,7 +29,6 @@ public class PrintEvenIndexElements {
 //		}
 //		System.out.println("Elements at even indexes: "+Arrays.toString(even));
 
-
 //		int index1 = 0;
 //		for (int n : arr) {
 //			if (index1 % 2 == 0) {
@@ -37,10 +36,10 @@ public class PrintEvenIndexElements {
 //			}
 //			index1++;
 //		}
-		
-		for(int i=0;i<arr.length;i++) {
-			if(i%2==0) {
-				System.out.print(arr[i]+" ");
+
+		for (int i = 0; i < arr.length; i++) {
+			if (i % 2 == 0) {
+				System.out.print(arr[i] + " ");
 			}
 		}
 

@@ -8,9 +8,9 @@ public class Print_Numbers {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the number where to end it :");
 		int a = sc.nextInt();
-		
+
 		for (int i = 1; i <= a; i++) {
-			System.out.print(i+" ");
+			System.out.print(i + " ");
 		}
 
 		sc.close();

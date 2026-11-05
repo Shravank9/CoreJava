@@ -20,9 +20,8 @@ Room Charge Per Day   : 2500.0
 Days Admitted         : 4
 Total Hospital Bill   : 10000.0*/
 
-
-
 package com.vcubelab_dailytest;
+
 import java.util.Scanner;
 
 public class Patient {
@@ -30,51 +29,47 @@ public class Patient {
 	int Age;
 	double Room_Charge_Per_Day;
 	int Number_of_Days_Admitted;
-	
-	Patient(String Name,int Age,double Room_Charge_Per_Day,int Number_of_Days_Admitted){
-		this.Name=Name;
-		this.Age=Age;
-		this.Room_Charge_Per_Day=Room_Charge_Per_Day;
-		this.Number_of_Days_Admitted=Number_of_Days_Admitted;
-		
+
+	Patient(String Name, int Age, double Room_Charge_Per_Day, int Number_of_Days_Admitted) {
+		this.Name = Name;
+		this.Age = Age;
+		this.Room_Charge_Per_Day = Room_Charge_Per_Day;
+		this.Number_of_Days_Admitted = Number_of_Days_Admitted;
+
 	}
+
 	double calculate() {
-		double c=Room_Charge_Per_Day * Number_of_Days_Admitted;
+		double c = Room_Charge_Per_Day * Number_of_Days_Admitted;
 		return c;
-		
+
 	}
+
 	void display() {
 		System.out.println("---------------------------------");
-		System.out.println("Patient Name          :"+Name);
-		System.out.println("Age                   :"+Age);
-		System.out.println("Room Charge Per Day   :"+Room_Charge_Per_Day);
-		System.out.println("Days Admitted         :"+Number_of_Days_Admitted);
-	    System.out.println("Total Hospital Bill  : " +calculate());
+		System.out.println("Patient Name          :" + Name);
+		System.out.println("Age                   :" + Age);
+		System.out.println("Room Charge Per Day   :" + Room_Charge_Per_Day);
+		System.out.println("Days Admitted         :" + Number_of_Days_Admitted);
+		System.out.println("Total Hospital Bill  : " + calculate());
 		System.out.println("---------------------------------");
 
 	}
 
-	
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		
+		Scanner sc = new Scanner(System.in);
+
 		System.out.println("Enter Patient Name:");
-		String Name=sc.nextLine();
+		String Name = sc.nextLine();
 		System.out.println("Enter Age:");
-		int Age=sc.nextInt();
+		int Age = sc.nextInt();
 		System.out.println("Enter Room Charge Per Day:");
-		double Room_Charge_Per_Day=sc.nextDouble();
+		double Room_Charge_Per_Day = sc.nextDouble();
 		System.out.println("Enter Number of Days Admitted:");
-		int Number_of_Days_Admitted=sc.nextInt();
-		
-		
-		
-		Patient t=new Patient(Name,Age,Room_Charge_Per_Day,Number_of_Days_Admitted);
+		int Number_of_Days_Admitted = sc.nextInt();
+
+		Patient t = new Patient(Name, Age, Room_Charge_Per_Day, Number_of_Days_Admitted);
 		t.display();
-		
-		
 
 	}
-	
 
 }

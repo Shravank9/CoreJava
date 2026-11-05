@@ -10,7 +10,7 @@ import com.vcubelab_dailytest.oopstask6.Tester;
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 
 		while (true) {
@@ -24,23 +24,22 @@ public class Main {
 
 			switch (choice) {
 			case 1 -> {
-				a = new Electronics(101,"Laptop",45000.0,"Lenovo");
+				a = new Electronics(101, "Laptop", 45000.0, "Lenovo");
 				a.displayProductDetails();
 				a.calculateDiscount();
-			
+
 			}
 			case 2 -> {
-				a = new Clothing(102,"Tones Shirt",1500.0,"Cotton");
+				a = new Clothing(102, "Tones Shirt", 1500.0, "Cotton");
 				a.displayProductDetails();
 				a.calculateDiscount();
-				
+
 			}
 
 			case 3 -> {
-				a = new Furniture(103,"Double Cart Bed",57000.0,"Ply-Wood");
+				a = new Furniture(103, "Double Cart Bed", 57000.0, "Ply-Wood");
 				a.displayProductDetails();
 				a.calculateDiscount();
-			
 
 			}
 			case 4 -> {

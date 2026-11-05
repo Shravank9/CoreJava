@@ -21,6 +21,7 @@ public class Bike extends Vehicle {
 		this.hasHelmet = hasHelmet;
 
 	}
+
 //own method
 	boolean checkHelmetAvailability() {
 
@@ -43,8 +44,6 @@ public class Bike extends Vehicle {
 
 		System.out.println("Enter the number of days you want to book it!");
 		int numberOfDays = sc.nextInt();
-		
-		
 
 		if (hasHelmet) {
 
@@ -52,13 +51,12 @@ public class Bike extends Vehicle {
 			System.out.println("service Charge for Helmet :" + HelmetCharge);
 
 			double Totalrent = HelmetCharge + (rentPerDay * numberOfDays * requiredVehicles);
-			
+
 			return Totalrent;
 		} else {
 
 			double Totalrent = (rentPerDay * numberOfDays * requiredVehicles);
 			return Totalrent;
-			
 
 		}
 

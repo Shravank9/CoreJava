@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DAOConnection {
-	static Connection con=null;
+	static Connection con = null;
 
 	public static Connection getConnecction() {
 		try {
@@ -19,4 +19,3 @@ public class DAOConnection {
 	}
 
 }
-

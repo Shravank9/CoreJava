@@ -1,17 +1,17 @@
 package com.vcubelab_dailytest.oopstask9_14_09_26;
 
-public class UPI extends Payment{
+public class UPI extends Payment {
 
 	@Override
 	void pay(double amount) {
-		
-		 transactionFee = amount * 0;
 
-	        System.out.println("Amount: " + amount);
-	        System.out.println("Transaction Fee: " + transactionFee);
-	        System.out.println("Total Amount: " + (amount + transactionFee));
-	        System.out.println("Payment Successful with UPI");
-		
+		transactionFee = amount * 0;
+
+		System.out.println("Amount: " + amount);
+		System.out.println("Transaction Fee: " + transactionFee);
+		System.out.println("Total Amount: " + (amount + transactionFee));
+		System.out.println("Payment Successful with UPI");
+
 	}
 
 }
