@@ -3,7 +3,7 @@ package AdvanceJava.Controller;
 import AdvanceJava.DAOLayer.DAOlayer;
 import AdvanceJava.Utility.Student;
 
-public class HEain {
+public class Main {
 	public static void main(String[] args) {
 
 		DAOlayer t = new DAOlayer();
