@@ -3,83 +3,101 @@ package Threads;
 
 public class OrderProcessingSystem {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        Resource rm = new Resource();
+		Resource rm = new Resource();
 
-        Producer p = new Producer(rm);
-        Consumer c = new Consumer(rm);
+		Producer p = new Producer(rm);
+		Consumer c = new Consumer(rm);
 
-        p.setName("Producer");
-        c.setName("Consumer");
-
-        p.start();
-        c.start();
-    }
+	}
 }
 
 class Resource {
 
-    int i;
+	int i;
+	boolean status = false;
 
-    void get() {
-        System.out.println("Get -> " + i);
-    }
+	synchronized void get() {
 
-    void put(int i) {
-        this.i = i;
-        System.out.println("Put -> " + i);
-    }
+		while (status) {
+			try {
+				wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println("Get -> " + i);
+		status = true;
+		notify();
+
+	}
+
+	synchronized void put(int i) throws InterruptedException {
+		this.i = i;
+		while (!status) {
+			wait();
+
+		}
+		System.out.println("Put -> " + i);
+		status = false;
+		notify();
+	}
 }
 
 class Producer extends Thread {
 
-    Resource rm;
+	Resource rm;
 
-    Producer(Resource rm) {
-        this.rm = rm;
-    }
+	Producer(Resource rm) {
+		this.rm = rm;
+		Thread t = new Thread(this, "Producer");
+		t.start();
+	}
 
-    @Override
-    public void run() {
+	@Override
+	public void run() {
 
-        int i = 0;
+		int i = 0;
 
-        while (true) {
+		while (true) {
 
-            rm.put(i++);
 
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-                break;
-            }
-        }
-    }
+			try {
+				rm.put(i++);
+
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+				break;
+			}
+		}
+	}
 }
 
 class Consumer extends Thread {
 
-    Resource rm;
+	Resource rm;
 
-    Consumer(Resource rm) {
-        this.rm = rm;
-    }
+	Consumer(Resource rm) {
+		this.rm = rm;
+		Thread t = new Thread(this, "Consumer");
+		t.start();
+	}
 
-    @Override
-    public void run() {
+	@Override
+	public void run() {
 
-        while (true) {
+		while (true) {
 
-            rm.get();
+			rm.get();
 
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-                break;
-            }
-        }
-    }
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+				break;
+			}
+		}
+	}
 }
