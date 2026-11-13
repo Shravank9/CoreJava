@@ -20,7 +20,7 @@ class Resource {
 
 	synchronized void get() {
 
-		while (status) {
+		while (!status) {
 			try {
 				wait();
 			} catch (InterruptedException e) {
@@ -28,19 +28,19 @@ class Resource {
 			}
 		}
 		System.out.println("Get -> " + i);
-		status = true;
+		status = false;
 		notify();
 
 	}
 
 	synchronized void put(int i) throws InterruptedException {
 		this.i = i;
-		while (!status) {
+		while (status) {
 			wait();
 
 		}
 		System.out.println("Put -> " + i);
-		status = false;
+		status = true;
 		notify();
 	}
 }
