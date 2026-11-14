@@ -21,7 +21,7 @@ public class SharedCounterSynchronization {
 
 }
 
-class Counter extends Thread {
+class Counter {
 
 	int count = 0;
 
